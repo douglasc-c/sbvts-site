@@ -3,6 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 import { navigationLinks } from '../data/navigationLinks'
 import bombrilWhite from '../assets/bombril_white.svg'
 import bombrilBlack from '../assets/bombril_black.svg'
+import anthemTrack from '../assets/Hino_SobreviventeS_M.C.mp3'
 
 type SiteHeaderProps = {
   clubName: string
@@ -46,7 +47,13 @@ export function SiteHeader({ clubName, tagline }: SiteHeaderProps) {
           </a>
         </div>
         <p>{tagline}</p>
-        <Link to="/#membership">Saber mais</Link>
+        <div className="site-topbar-right">
+          <audio className="site-topbar-player" controls preload="none" autoPlay aria-label="Hino Sobreviventes MC">
+            <source src={anthemTrack} type="audio/mpeg" />
+            Seu navegador nao suporta audio.
+          </audio>
+          <Link to="/#membership">Saber mais</Link>
+        </div>
       </div>
 
       <div className="site-header">

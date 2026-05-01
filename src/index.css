@@ -175,13 +175,24 @@ a {
   gap: 0.75rem;
 }
 
+.site-topbar-right {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  gap: 0.65rem;
+}
+
+.site-topbar-player {
+  width: clamp(160px, 20vw, 220px);
+  height: 28px;
+}
+
 .site-topbar a {
   color: #d0d0d0;
   text-decoration: none;
 }
 
-.site-topbar > a {
-  justify-self: end;
+.site-topbar-right > a {
   background: #fff;
   color: #000;
   padding: 0.35rem 0.7rem;
@@ -632,6 +643,15 @@ a {
   .site-topbar {
     grid-template-columns: 1fr auto;
     row-gap: 0.4rem;
+  }
+
+  .site-topbar-right {
+    gap: 0.45rem;
+  }
+
+  .site-topbar-player {
+    width: 132px;
+    height: 26px;
   }
 
   .site-topbar p {
