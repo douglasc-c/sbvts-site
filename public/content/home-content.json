@@ -1,0 +1,78 @@
+{
+  "clubName": "SobreviventeS M.C",
+  "tagline": "o velho vive, viva o velho",
+  "heroTitle": "Hierarquia, Disciplina e Lealdade",
+  "heroSubtitle": "O mundo biker, onde cada irmão é uma história e cada encontro é um conto para contar.",
+  "features": [
+    {
+      "title": "1 de maio de 2011",
+      "description": "Tudo começou em uma garagem. Foi ali que Rodolfo teve a visão de criar algo maior que um motoclube: um código de conduta. Inspirado pela essência do bairro e pelos símbolos que carregam sua raiz, nasceu o SOBREVIVENTES MOTO CLUBE. Nosso brasão não é apenas um desenho — é um aviso. O “VELHO”: a cara da estrada, o peso da experiência e o olhar de quem já viveu de tudo e não deve nada a ninguém. Não é só um personagem. É a personificação do espírito livre, da disciplina e da lealdade que nos mantém de pé. Desde então, seguimos firmes, carregando essa identidade com respeito, atitude e irmandade — honrando nossas cores."
+    },
+    {
+      "title": "Clubhouse Culture",
+      "description": "A home base for workshops, stories, live music nights, and rider meetups."
+    },
+    {
+      "title": "Track Day Sessions",
+      "description": "Private coaching and technical riding sessions to sharpen control and confidence."
+    }
+  ],
+  "stats": [
+    { "value": 1200, "label": "Active Riders", "suffix": "+" },
+    { "value": 75, "label": "Annual Rides" },
+    { "value": 14, "label": "Club Chapters" }
+  ],
+  "events": [
+    {
+      "title": "Thunder Coast Run",
+      "date": "May 18, 2026",
+      "location": "Santos, SP",
+      "summary": "Sunrise departure, coastal route, and evening gathering with guest bands.",
+      "details": "A long-form coastal expedition with full support team, rest points every 90 minutes, and a sunset meetup by the waterfront.",
+      "distanceKm": 216,
+      "difficulty": "Intermediate",
+      "routeHighlights": ["Coastal highway sprint", "Harbor viewpoint stop", "Sunset club gathering"]
+    },
+    {
+      "title": "Iron Night Garage",
+      "date": "Jun 03, 2026",
+      "location": "Sao Paulo, SP",
+      "summary": "A mechanical workshop focused on suspension setup and brake optimization.",
+      "details": "Hands-on night session with experienced mechanics for practical setup adjustments and rider-specific performance tuning.",
+      "distanceKm": 42,
+      "difficulty": "Easy",
+      "routeHighlights": ["Garage diagnostics", "Suspension tuning clinic", "Brake response optimization"]
+    },
+    {
+      "title": "Canyon Black Ride",
+      "date": "Jul 12, 2026",
+      "location": "Campos do Jordao, SP",
+      "summary": "Twist-road ride with timed checkpoints and pro photography coverage.",
+      "details": "A precision-focused canyon route built for experienced riders, combining high-altitude roads, cornering sessions, and safety monitoring.",
+      "distanceKm": 284,
+      "difficulty": "Advanced",
+      "routeHighlights": ["Mountain ascent route", "Timed checkpoint challenge", "Professional ride photography"]
+    }
+  ],
+  "membershipPlans": [
+    {
+      "name": "Road Pass",
+      "price": "$29/mo",
+      "perks": [
+        "Monthly group ride access",
+        "Members channel access",
+        "Exclusive rider kit discounts"
+      ]
+    },
+    {
+      "name": "Full Throttle",
+      "price": "$59/mo",
+      "perks": [
+        "Priority event registration",
+        "Track day early access",
+        "Private mechanics sessions"
+      ],
+      "isHighlighted": true
+    }
+  ]
+}
