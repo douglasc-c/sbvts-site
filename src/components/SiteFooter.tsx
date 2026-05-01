@@ -22,14 +22,6 @@ export function SiteFooter({ clubName }: SiteFooterProps) {
         <p>NOSSO VELHO É ESCUDO, É FORTALEZA</p>
       </div>
 
-      <form className="site-footer-form" onSubmit={(event) => event.preventDefault()}>
-        <label htmlFor="newsletter-email">Newsletter</label>
-        <div>
-          <input id="newsletter-email" name="email" type="email" placeholder="Digite seu email" />
-          <button type="submit">Inscrever-se</button>
-        </div>
-      </form>
-
       <p className="site-footer-copyright">{currentYear} {clubName}. Todos os direitos reservados.</p>
     </footer>
   )
