@@ -112,6 +112,9 @@
 .home-story-card h2 {
   font-size: clamp(2rem, 4vw, 3.1rem);
 }
+.home-story-card p {
+  text-align: justify;
+}
 
 .home-legacy-image-frame {
   position: relative;
@@ -176,6 +179,10 @@
   font-size: clamp(2rem, 4vw, 3rem);
 }
 
+.home-garage-panel p:not(.home-kicker) {
+  text-align: justify;
+}
+
 .home-upcoming {
   background:
     repeating-linear-gradient(-45deg, #f4f4f4, #f4f4f4 8px, #f0f0f0 8px, #f0f0f0 16px);
@@ -187,60 +194,6 @@
 .home-upcoming h2 {
   text-align: center;
   font-size: clamp(2.1rem, 4vw, 3rem);
-}
-
-.home-event-list {
-  display: grid;
-  gap: 1rem;
-}
-
-.home-event-row {
-  display: grid;
-  grid-template-columns: 168px auto 1fr auto;
-  gap: 1rem;
-  align-items: center;
-  background: #fff;
-  border: 1px solid #dfdfdf;
-  padding: 1rem;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-}
-
-.home-event-thumb {
-  width: 168px;
-  height: 92px;
-  background-size: cover;
-  background-position: center;
-  filter: grayscale(1);
-}
-
-.home-event-day {
-  min-width: 70px;
-  background: #111;
-  color: #fff;
-  text-align: center;
-  padding: 0.6rem 0.4rem;
-  display: grid;
-}
-
-.home-event-day strong {
-  font-size: 1.7rem;
-  line-height: 1;
-}
-
-.home-event-day span {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-}
-
-.home-event-content h3 {
-  font-size: clamp(1.5rem, 3vw, 2.1rem);
-}
-
-.home-event-meta {
-  display: grid;
-  gap: 0.4rem;
-  justify-items: end;
-  text-align: right;
 }
 
 .home-collaboration-quote {
@@ -374,6 +327,10 @@
   border: 1px solid #e1e1e1;
 }
 
+.home-values-card p {
+  text-align: justify;
+}
+
 .home-contact-form {
   margin-top: 1rem;
   display: grid;
@@ -392,6 +349,21 @@
 .home-contact-form textarea,
 .home-full-width-button {
   grid-column: 1 / -1;
+}
+
+.home-contact-feedback {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.home-contact-feedback.is-success {
+  color: #1f7a33;
+}
+
+.home-contact-feedback.is-error {
+  color: #9f2020;
 }
 
 .home-values-card ul {

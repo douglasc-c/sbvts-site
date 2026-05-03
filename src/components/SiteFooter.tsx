@@ -14,7 +14,7 @@ export function SiteFooter({ clubName }: SiteFooterProps) {
         <div className="site-footer-brand-right">
           <nav className="site-footer-nav" aria-label="Footer navigation">
             <a href="/#home">Inicio</a>
-            <a href="/#about">Sobre nós</a>
+            <a href="/about">Sobre nós</a>
             <a href="/gallery">Galeria</a>
             <a href="/#membership">Saiba mais</a>
           </nav>
