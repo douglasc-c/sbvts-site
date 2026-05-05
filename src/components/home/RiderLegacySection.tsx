@@ -1,4 +1,5 @@
 import type { FeatureCard } from '../../types/site'
+import { Link } from 'react-router-dom'
 
 type RiderLegacySectionProps = {
   features: FeatureCard[]
@@ -17,9 +18,9 @@ export function RiderLegacySection({ features, imageUrl }: RiderLegacySectionPro
           {mainFeature?.description ??
             'Built to move with discipline and passion, our group values road respect and rider growth above all.'}
         </p>
-        <a className="home-primary-button" href="/about" >
+        <Link className="home-primary-button" to="/about">
           Descubra mais
-        </a>
+        </Link>
       </article>
 
       <figure className="home-legacy-image-frame">

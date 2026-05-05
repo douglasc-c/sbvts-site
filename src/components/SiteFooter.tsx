@@ -1,4 +1,5 @@
 import logoBlack from '../assets/escudo_vetor.svg'
+import { Link } from 'react-router-dom'
 
 type SiteFooterProps = {
   clubName: string
@@ -13,10 +14,10 @@ export function SiteFooter({ clubName }: SiteFooterProps) {
         <img src={logoBlack} alt={clubName} className="site-footer-logo" />
         <div className="site-footer-brand-right">
           <nav className="site-footer-nav" aria-label="Footer navigation">
-            <a href="/#home">Inicio</a>
-            <a href="/about">Sobre nós</a>
-            <a href="/gallery">Galeria</a>
-            <a href="/#membership">Saiba mais</a>
+            <Link to="/#home">Inicio</Link>
+            <Link to="/about">Sobre nós</Link>
+            <Link to="/gallery">Galeria</Link>
+            <Link to="/#membership">Saiba mais</Link>
           </nav>
         </div>
         <p>NOSSO VELHO É ESCUDO, É FORTALEZA</p>
