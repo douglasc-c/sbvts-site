@@ -5,7 +5,6 @@ import { HomeHero } from '../components/home/HomeHero'
 import { LatestArticlesSection } from '../components/home/LatestArticlesSection'
 import { MidBannerSection } from '../components/home/MidBannerSection'
 import { RiderLegacySection } from '../components/home/RiderLegacySection'
-// import { UpcomingEventsSection } from '../components/home/UpcomingEventsSection'
 import { homeGallery } from '../data/gallerySections'
 import { homeImages, homeValues } from '../data/homeSections'
 import { useSiteContent } from '../hooks/useSiteContent'
@@ -19,7 +18,6 @@ export function HomePage() {
       <HomeHero title={content.heroTitle} subtitle={content.heroSubtitle} imageUrl={homeImages.hero} />
       <RiderLegacySection features={content.features} imageUrl={homeImages.legacy} />
       <GarageStorySection imageUrl={homeImages.garage} />
-      {/* <UpcomingEventsSection events={content.events} /> */}
 
       <DirectorsSection />
 

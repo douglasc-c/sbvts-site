@@ -13,7 +13,7 @@ export function HomeHero({ title, subtitle, imageUrl }: HomeHeroProps) {
         <h1>{title}</h1>
         <p>{subtitle}</p>
         <a className="home-primary-button" href="#membership">
-          Falar com a equipe
+          Saiba mais
         </a>
       </div>
     </section>
