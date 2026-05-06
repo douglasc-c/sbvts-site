@@ -66,7 +66,7 @@ export function SiteHeader({ clubName, tagline }: SiteHeaderProps) {
         </div>
         <p>{tagline}</p>
         <div className="site-topbar-right">
-          <audio ref={anthemAudioRef} className="site-topbar-player" controls preload="none" autoPlay aria-label="Hino Sobreviventes MC">
+          <audio ref={anthemAudioRef} className="site-topbar-player" controls preload="none" aria-label="Hino Sobreviventes MC">
             <source src={anthemTrack} type="audio/mpeg" />
             Seu navegador nao suporta audio.
           </audio>

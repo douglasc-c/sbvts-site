@@ -1,15 +1,18 @@
 import { useEffect, useRef, useState } from 'react'
+import { createPortal } from 'react-dom'
 import { homeGallery } from '../data/homeSections'
 import './GalleryPage.css'
 
 export function GalleryPage() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
+  const [navigationDirection, setNavigationDirection] = useState<'next' | 'previous'>('next')
   const wheelCooldownRef = useRef(0)
 
   const isLightboxOpen = activeIndex !== null
   const currentItem = activeIndex !== null ? homeGallery[activeIndex] : null
 
   const openLightbox = (index: number) => {
+    setNavigationDirection('next')
     setActiveIndex(index)
   }
 
@@ -18,6 +21,7 @@ export function GalleryPage() {
   }
 
   const showNext = () => {
+    setNavigationDirection('next')
     setActiveIndex((previousIndex) => {
       if (previousIndex === null) {
         return 0
@@ -28,6 +32,7 @@ export function GalleryPage() {
   }
 
   const showPrevious = () => {
+    setNavigationDirection('previous')
     setActiveIndex((previousIndex) => {
       if (previousIndex === null) {
         return 0
@@ -85,6 +90,61 @@ export function GalleryPage() {
     }
   }, [isLightboxOpen])
 
+  const lightboxContent =
+    isLightboxOpen && currentItem
+      ? createPortal(
+          <div
+            className="gallery-lightbox"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Visualizador da galeria"
+            onClick={closeLightbox}
+          >
+            <div className="gallery-lightbox-content" onClick={(event) => event.stopPropagation()} onWheel={handleLightboxWheel}>
+              <button type="button" className="gallery-lightbox-close" onClick={closeLightbox} aria-label="Fechar galeria">
+                <span aria-hidden="true">×</span>
+                Fechar
+              </button>
+
+              <button
+                type="button"
+                className="gallery-lightbox-nav gallery-lightbox-prev"
+                onClick={showPrevious}
+                aria-label="Imagem anterior"
+              >
+                ←
+              </button>
+
+              <figure
+                className={`gallery-lightbox-figure is-${navigationDirection}`}
+                key={`${activeIndex ?? 0}-${navigationDirection}`}
+              >
+                <img src={currentItem.imageUrl} alt={currentItem.title} />
+                <figcaption>
+                  <div className="gallery-lightbox-meta">
+                    <strong>{currentItem.title}</strong>
+                    <span>{currentItem.excerpt}</span>
+                  </div>
+                  <small>
+                    {activeIndex !== null ? activeIndex + 1 : 1} / {homeGallery.length}
+                  </small>
+                </figcaption>
+              </figure>
+
+              <button
+                type="button"
+                className="gallery-lightbox-nav gallery-lightbox-next"
+                onClick={showNext}
+                aria-label="Próxima imagem"
+              >
+                →
+              </button>
+            </div>
+          </div>,
+          document.body,
+        )
+      : null
+
   return (
     <main className="page-enter gallery-page section-shell">
       <header className="gallery-header">
@@ -113,42 +173,7 @@ export function GalleryPage() {
           </article>
         ))}
       </section>
-
-      {isLightboxOpen && currentItem && (
-        <div className="gallery-lightbox" role="dialog" aria-modal="true" aria-label="Visualizador da galeria" onClick={closeLightbox}>
-          <div className="gallery-lightbox-content" onClick={(event) => event.stopPropagation()} onWheel={handleLightboxWheel}>
-            <button type="button" className="gallery-lightbox-close" onClick={closeLightbox} aria-label="Fechar galeria">
-              Fechar
-            </button>
-
-            <button
-              type="button"
-              className="gallery-lightbox-nav gallery-lightbox-prev"
-              onClick={showPrevious}
-              aria-label="Imagem anterior"
-            >
-              ←
-            </button>
-
-            <figure className="gallery-lightbox-figure">
-              <img src={currentItem.imageUrl} alt={currentItem.title} />
-              <figcaption>
-                <strong>{currentItem.title}</strong>
-                <span>{currentItem.excerpt}</span>
-              </figcaption>
-            </figure>
-
-            <button
-              type="button"
-              className="gallery-lightbox-nav gallery-lightbox-next"
-              onClick={showNext}
-              aria-label="Próxima imagem"
-            >
-              →
-            </button>
-          </div>
-        </div>
-      )}
+      {lightboxContent}
     </main>
   )
 }

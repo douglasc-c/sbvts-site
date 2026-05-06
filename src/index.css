@@ -24,6 +24,7 @@ body,
 #root {
   margin: 0;
   min-height: 100%;
+  background: #050505;
 }
 
 body {
@@ -31,6 +32,10 @@ body {
   color: var(--text);
   background: linear-gradient(160deg, #050505 0%, #0a0a0a 45%, #111 100%);
   line-height: 1.6;
+}
+
+#root {
+  min-height: 100vh;
 }
 
 .page-shell {
@@ -537,7 +542,7 @@ a {
     linear-gradient(rgba(10, 10, 10, 0.97), rgba(10, 10, 10, 0.97)),
     repeating-linear-gradient(-45deg, #111, #111 8px, #151515 8px, #151515 16px);
   color: #cacaca;
-  padding: clamp(2.4rem, 5vw, 4rem) clamp(1.2rem, 3vw, 3rem);
+  padding: clamp(1rem, 2.3vw, 1.7rem) clamp(1.2rem, 3vw, 3rem);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem 3rem;

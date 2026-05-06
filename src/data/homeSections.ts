@@ -13,6 +13,12 @@ import galeria6 from '../assets/galeria/91f86ae3-999f-44bd-9904-0677666436aa.jpg
 import galeria7 from '../assets/galeria/be87da69-4690-404c-bc25-d107a2f861e7.jpg'
 import galeria8 from '../assets/galeria/57305134-78ab-487f-93c7-9867817fb611.jpg'
 import galeria9 from '../assets/galeria/82806521-9823-4961-B998-F82E2591AF48.png'
+import galeria10 from '../assets/galeria/IMG_2647.jpeg'
+import galeria11 from '../assets/galeria/IMG_7081.jpeg'
+import galeria12 from '../assets/galeria/IMG_7625.jpeg'
+import galeria13 from '../assets/galeria/IMG_7628.jpeg'
+import galeria14 from '../assets/galeria/IMG_7650.jpeg'
+import galeria15 from '../assets/galeria/e24b1c39-0e2a-4213-a958-d8f8c47d4d22.jpg'
 
 export const homeImages = {
   hero: heroLocalImage,
@@ -53,8 +59,8 @@ export const homeGallery: ArticleItem[] = [
     imageUrl: galeria3,
   },
   {
-    title: 'Passeio Oficial',
-    excerpt: 'Registro de passeio oficial do SBVTS, com presença e representatividade nas ruas.',
+    title: 'Nossa Casa',
+    excerpt: 'Registro de nossa casa, a confraternização entre os membros e integrantes.',
     imageUrl: galeria4,
   },
   {
@@ -81,5 +87,35 @@ export const homeGallery: ArticleItem[] = [
     title: 'Cores do Clube',
     excerpt: 'As cores do SBVTS presentes em cada detalhe, do colete à atitude de cada irmão.',
     imageUrl: galeria9,
+  },
+  {
+    title: 'Presença na Estrada',
+    excerpt: 'Mais um registro da presença do SBVTS, levando atitude, respeito e identidade por onde passa.',
+    imageUrl: galeria10,
+  },
+  {
+    title: 'União em Movimento',
+    excerpt: 'Os irmãos seguem juntos, reforçando na estrada os valores que sustentam o clube.',
+    imageUrl: galeria11,
+  },
+  {
+    title: 'Respeito e Postura',
+    excerpt: 'Uma imagem que representa a postura firme, a disciplina e o compromisso com as cores.',
+    imageUrl: galeria12,
+  },
+  {
+    title: 'Irmandade Sobre Rodas',
+    excerpt: 'Cada saída reforça a irmandade construída com lealdade, convivência e estrada.',
+    imageUrl: galeria13,
+  },
+  {
+    title: 'Memória do Clube',
+    excerpt: 'Registro de mais um momento importante da trajetória do SBVTS e da sua história.',
+    imageUrl: galeria14,
+  },
+  {
+    title: 'Essência Sobreviventes',
+    excerpt: 'Uma imagem que resume o espírito do clube: união, identidade e respeito pela caminhada.',
+    imageUrl: galeria15,
   },
 ]
