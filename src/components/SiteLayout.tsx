@@ -14,9 +14,9 @@ export function SiteLayout() {
       <div className="page-shell">
         <main className="page-enter">
           <section className="section-shell">
-            <p className="section-kicker">Loading</p>
-            <h1>Preparing Ride Data</h1>
-            <p className="hero-subtitle">Fetching external content and route information.</p>
+            <p className="section-kicker">Carregando</p>
+            <h1>Preparando conteudo</h1>
+            <p className="hero-subtitle">Buscando informacoes de conteudo e rotas.</p>
           </section>
         </main>
       </div>
@@ -28,9 +28,9 @@ export function SiteLayout() {
       <div className="page-shell">
         <main className="page-enter">
           <section className="section-shell">
-            <p className="section-kicker">Load Error</p>
-            <h1>Content Could Not Be Loaded</h1>
-            <p className="hero-subtitle">Check the external JSON file and try again.</p>
+            <p className="section-kicker">Erro de carregamento</p>
+            <h1>Nao foi possivel carregar o conteudo</h1>
+            <p className="hero-subtitle">Verifique o arquivo JSON externo e tente novamente.</p>
           </section>
         </main>
       </div>

@@ -5,9 +5,35 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SOBREVIVENTES M.C</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+        background: #050505;
+      }
+
+      #root {
+        min-height: 100vh;
+      }
+
+      .app-boot-loading {
+        position: fixed;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        background: radial-gradient(circle at 20% 20%, #1a1a1a 0%, #0a0a0a 55%, #050505 100%);
+        color: #f0f0f0;
+        font: 700 14px/1.2 'Segoe UI', sans-serif;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        z-index: 9999;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
+    <div id="app-boot-loading" class="app-boot-loading">Carregando SBVTS...</div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
