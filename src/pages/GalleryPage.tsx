@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
-import { homeGallery } from '../data/homeSections'
+import { homeGallery } from '../data/gallerySections'
 import './GalleryPage.css'
 
 export function GalleryPage() {

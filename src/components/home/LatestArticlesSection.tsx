@@ -65,7 +65,7 @@ export function LatestArticlesSection({ items }: LatestArticlesSectionProps) {
           <p className="home-kicker">SBVTS</p>
           <h2>Galeria</h2>
         </div>
-        <Link to="/gallery">Ver mais</Link>
+        <Link to="/gallery">Ver galeria</Link>
       </article>
 
       <div className="home-article-carousel">
