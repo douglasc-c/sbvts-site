@@ -23,7 +23,7 @@
 }
 
 .about-page .section-kicker {
-  color: #717171;
+  color: var(--line);
 }
 
 .about-page .hero-subtitle {
