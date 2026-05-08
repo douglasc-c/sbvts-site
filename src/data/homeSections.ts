@@ -3,12 +3,14 @@ import heroLocalImage from '../assets/jpg/IMG_1796.jpeg'
 import legacyLocalImage from '../assets/jpg/CIMG0788.jpg'
 import garageLocalImage from '../assets/jpg/IMG_7626.jpeg'
 import midBannerImage from '../assets/jpg/9d784d6b-f215-419c-85bf-991246956467.jpg'
+import allBannerImage from '../assets/jpg/C113FCD4-80E9-434C-86E8-CB44D94A5ED3_1_105_c.jpeg'
 
 export const homeImages = {
   hero: heroLocalImage,
   legacy: legacyLocalImage,
   garage: garageLocalImage,
   midBanner: midBannerImage,
+  allBanner: allBannerImage,
 }
 
 export const homeValues: ValueItem[] = [

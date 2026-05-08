@@ -10,13 +10,35 @@
 }
 
 .home-kicker {
+  /* font-family: 'TimesAndTimesAgain', 'Bebas Neue', Impact, sans-serif; */
   text-transform: uppercase;
   letter-spacing: 0.18em;
   font-size: 0.72rem;
   font-weight: 800;
   color: #111;
 }
+.home-kicker-logo {
+  width: 100%;
+  max-width: 1500px;
+  height: auto;
+  display: block;
+}
 
+.home-hero-logo-wrap {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  width: min(100%, 1200px);
+  padding: 0 1rem;
+}
+
+.home-hero-logo-wrap .home-kicker-logo {
+  width: 100%;
+  max-width: 1200px;
+}
 .home-center {
   text-align: center;
 }
@@ -52,13 +74,15 @@
 .home-hero,
 .home-mid-banner {
   position: relative;
-  min-height: 680px;
+  min-height: 740px;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
   display: grid;
-  align-items: center;
+  align-items: end;
+  padding-bottom: clamp(2rem, 6vw, 5rem);
   border-bottom: 1px solid #dadada;
 }
 
@@ -66,15 +90,15 @@
 .home-mid-banner-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 1));
 }
 
 .home-hero-content,
 .home-mid-banner-content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   margin: 0 auto;
-  width: min(78%, 760px);
+  width: min(90%, 1200px);
   text-align: center;
   color: #fff;
   display: grid;
@@ -513,6 +537,10 @@
 }
 
 @media (max-width: 980px) {
+  .home-kicker-logo {
+    max-width: 320px;
+  }
+
   .home-split-block,
   .home-contact,
   .home-event-row,

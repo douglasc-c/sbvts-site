@@ -1,6 +1,8 @@
-import { homeValues } from '../data/homeSections'
-import { aboutContextCards } from '../data/aboutSections'
+import { homeValues, homeImages } from '../data/homeSections'
+import { aboutTimeline } from '../data/aboutSections'
+import { AboutGarageSection } from '../components/about/AboutGarageSection'
 import './AboutPage.css'
+import { TimelineSection } from '../components/about/TimelineSection'
 
 export function AboutPage() {
   return (
@@ -12,6 +14,9 @@ export function AboutPage() {
           O SOBREVIVENTES nasceu de reuniões em garagem e evoluiu para uma irmandade de alta responsabilidade, guiada por postura e compromisso com as cores. Cada irmão é parte de uma história construída com respeito, disciplina e lealdade, onde a estrada é o cenário e a moto é a paixão que nos une. Temos como missão preservar a tradição, fortalecer os laços e avançar no território nacional.
         </p>
       </section>
+
+      <AboutGarageSection imageUrl={homeImages.allBanner} />
+
 
       <section className="section-shell about-values">
         <div className="section-heading-row">
@@ -31,24 +36,7 @@ export function AboutPage() {
         </div>
       </section>
 
-      <section className="section-shell about-context">
-        <div className="section-heading-row">
-          <div>
-            <p className="section-kicker">Marcos do Clube</p>
-            <h2>Conheça Nossa Base</h2>
-          </div>
-        </div>
-
-        <div className="about-context-grid stagger-grid">
-          {aboutContextCards.map((card) => (
-            <article className="about-context-card" key={card.title}>
-              <span className="about-context-subtitle">{card.subtitle}</span>
-              <h3>{card.title}</h3>
-              <p>{card.description}</p>
-            </article>
-          ))}
-        </div>
-      </section>
+      <TimelineSection items={aboutTimeline} />
     </main>
   )
 }
