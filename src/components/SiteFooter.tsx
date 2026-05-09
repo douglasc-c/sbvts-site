@@ -23,7 +23,7 @@ export function SiteFooter({ clubName }: SiteFooterProps) {
         <p>NOSSO VELHO É ESCUDO, É FORTALEZA.</p>
       </div>
 
-      <p className="site-footer-copyright">Desenvolvido por Spacetools Technologic. © {currentYear} SobreviventeS Moto Clube®. Todos os direitos reservados.</p>
+      <p className="site-footer-copyright">Desenvolvido por Spacetools Technologic. © 2011 - {currentYear} SobreviventeS Moto Clube®. Todos os direitos reservados.</p>
     </footer>
   )
 }

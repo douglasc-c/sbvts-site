@@ -11,7 +11,7 @@ export function AboutPage() {
         <p className="section-kicker">Nossa História</p>
         <h1>Forjados no respeito, unidos pela confiança</h1>
         <p className="hero-subtitle">
-          O SOBREVIVENTES nasceu de reuniões em garagem e evoluiu para uma irmandade de alta responsabilidade, guiada por postura e compromisso com as cores. Cada irmão é parte de uma história construída com respeito, disciplina e lealdade, onde a estrada é o cenário e a moto é a paixão que nos une. Temos como missão preservar a tradição, fortalecer os laços e avançar no território nacional.
+          O SOBREVIVENTES nasceu de reuniões em uma garagem e evoluiu para uma irmandade de alta responsabilidade, guiada por postura e compromisso com as cores. Cada irmão é parte de uma história construída com respeito, disciplina e lealdade. Temos como missão preservar a tradição, fortalecer os laços e avançar no território nacional.
         </p>
       </section>
 

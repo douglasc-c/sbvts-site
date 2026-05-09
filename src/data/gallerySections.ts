@@ -18,8 +18,8 @@ import galeria15 from '../assets/galeria/e24b1c39-0e2a-4213-a958-d8f8c47d4d22.jp
 
 export const homeGallery: ArticleItem[] = [
   {
-    title: 'SBVTS em Formação',
-    excerpt: 'Registro do clube em formação, representando a força e a disciplina dos irmãos SobreviventeS.',
+    title: 'SBVTS reunidos',
+    excerpt: 'Registro do clube reunido, representando a força e a disciplina dos irmãos SobreviventeS.',
     imageUrl: galeria1,
   },
   {
@@ -30,7 +30,7 @@ export const homeGallery: ArticleItem[] = [
   {
     title: 'Saída em Pelotão',
     excerpt: 'Os irmãos em movimento, com alinhamento e respeito à ordem estabelecida pelo clube.',
-    imageUrl: galeria3,
+    imageUrl: galeria12,
   },
   {
     title: 'Nossa Casa',
@@ -39,18 +39,18 @@ export const homeGallery: ArticleItem[] = [
   },
   {
     title: 'Tradição e Irmandade',
-    excerpt: 'Momento que traduz o espírito do clube: lealdade, respeito e amor pela moto.',
-    imageUrl: galeria5,
+    excerpt: 'Momento que traduz o espírito do clube: lealdade, respeito e a honra pelas cores.',
+    imageUrl: galeria7,
   },
   {
     title: 'Concentração',
-    excerpt: 'Preparativos antes da saída, com todos os membros reunidos e prontos para a estrada.',
+    excerpt: 'Presenca do clube em mais um momento de concentração, onde a disciplina e a postura são evidentes.',
     imageUrl: galeria6,
   },
   {
     title: 'Na Estrada',
     excerpt: 'A liberdade da estrada é o que une os irmãos SobreviventeS a cada quilômetro percorrido.',
-    imageUrl: galeria7,
+    imageUrl: galeria5,
   },
   {
     title: 'Registro Oficial',
@@ -70,12 +70,12 @@ export const homeGallery: ArticleItem[] = [
   {
     title: 'União em Movimento',
     excerpt: 'Os irmãos seguem juntos, reforçando na estrada os valores que sustentam o clube.',
-    imageUrl: galeria11,
+    imageUrl: galeria14,
   },
   {
     title: 'Respeito e Postura',
     excerpt: 'Uma imagem que representa a postura firme, a disciplina e o compromisso com as cores.',
-    imageUrl: galeria12,
+    imageUrl: galeria3,
   },
   {
     title: 'Irmandade Sobre Rodas',
@@ -85,7 +85,7 @@ export const homeGallery: ArticleItem[] = [
   {
     title: 'Memória do Clube',
     excerpt: 'Registro de mais um momento importante da trajetória do SBVTS e da sua história.',
-    imageUrl: galeria14,
+    imageUrl: galeria11,
   },
   {
     title: 'Essência Sobreviventes',

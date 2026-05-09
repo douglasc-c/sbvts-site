@@ -60,6 +60,7 @@
   font-family: var(--heading-font);
   font-size: 2rem;
   line-height: 1;
+  border-left: 2px solid #fff;
   padding: 0.35rem 0.75rem;
   letter-spacing: 0.03em;
   z-index: 1;
