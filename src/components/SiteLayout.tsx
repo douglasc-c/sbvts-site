@@ -3,11 +3,13 @@ import { SiteFooter } from './SiteFooter'
 import { SiteHeader } from './SiteHeader'
 import { useHashScroll } from '../hooks/useHashScroll'
 import { useHomeContent } from '../hooks/useHomeContent'
+import { useScrollToTop } from '../hooks/useScrollToTop'
 
 export function SiteLayout() {
   const { content, isLoading, hasError } = useHomeContent()
 
   useHashScroll()
+  useScrollToTop()
 
   if (isLoading) {
     return (

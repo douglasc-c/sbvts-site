@@ -2,22 +2,6 @@ import type { StatItem } from '../types/site'
 import img1796 from '../assets/jpg/CIMG0790.jpg'
 import imgCimg from '../assets/jpg/889178A6-A7A4-4EC8-ACE8-43663BA91608_1_201_a.jpeg'
 
-
-export const aboutContextCards = [
-  {
-    title: 'Fundação do Motoclube',
-    subtitle: 'Origem e propósito',
-    description:
-      'Em 1 de maio de 2011, o SBVTS nasceu em garagem com um propósito claro: formar uma irmandade guiada por hierarquia, disciplina e lealdade.',
-  },
-  {
-    title: 'Unidade Santa Catarina',
-    subtitle: 'Representação no estado',
-    description:
-      'Em 10 de junho de 2017, a unidade de Joinville - SC foi fundada para representar nossas cores no estado, fortalecer a identidade regional e garantir que o mesmo código de conduta seja seguido.',
-  },
-]
-
 export const aboutStats: StatItem[] = [
   { value: 2026 - 2011, label: 'Anos de história', suffix: '+' },
   { value: 2, label: 'Unidades ativas' },

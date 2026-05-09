@@ -8,6 +8,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Times and Times again';
+  src: local('Times and Times again'),
+       url('/fonts/times-and-times-again.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --bg: #070707;
   --surface: #111;
