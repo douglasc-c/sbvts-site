@@ -1,3 +1,5 @@
+import { BrandWordmark } from '../BrandWordmark'
+
 type HomeHeroProps = {
   title: string
   subtitle: string
@@ -9,7 +11,7 @@ export function HomeHero({ title, subtitle, imageUrl }: HomeHeroProps) {
     <section className="home-hero" style={{ backgroundImage: `url(${imageUrl})` }}>
       <div className="home-hero-overlay" />
       <div className="home-hero-logo-wrap" aria-hidden="true">
-        <img src="/sobrevieventesmotoclube.svg" alt="" className="home-kicker-logo" />
+        <BrandWordmark className="home-kicker-logo" />
       </div>
       <div className="home-hero-content">
         <h1>{title}</h1>
