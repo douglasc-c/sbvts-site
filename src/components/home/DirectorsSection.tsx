@@ -92,7 +92,7 @@ export function DirectorsSection() {
               )}
 
               <div className="home-director-info">
-                <strong>{director.name}</strong>
+                <strong translate="no">{director.name}</strong>
                 <span>{director.role}</span>
               </div>
             </div>
