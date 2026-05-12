@@ -11,7 +11,7 @@ export function LatestArticlesSection({ items }: LatestArticlesSectionProps) {
   const { startIndex } = useCarousel({
     totalItems: items.length,
     pageSize: 3,
-    autoplayIntervalMs: 6000,
+    autoplayIntervalMs: 12000,
   })
 
   const transitionDurationMs = 520

@@ -14,8 +14,6 @@ if (!rootElement) {
 const root = createRoot(rootElement)
 
 async function bootstrap() {
-  await preloadAppAssets()
-
   root.render(
     <StrictMode>
       <BrowserRouter>
@@ -23,6 +21,9 @@ async function bootstrap() {
       </BrowserRouter>
     </StrictMode>,
   )
+
+  // Preload in background so first paint is not blocked by heavy assets.
+  void preloadAppAssets()
 
   const loadingElement = document.getElementById('app-boot-loading')
   loadingElement?.remove()

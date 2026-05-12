@@ -1,16 +1,8 @@
 import { homeImages } from '../data/homeSections'
-import { homeGallery } from '../data/gallerySections'
 import { setCachedHomeContent } from '../data/homeContentCache'
 import type { HomeContent } from '../types/site'
 
-import directorPresident from '../assets/diretores/presidente.jpeg'
-import directorVicePresident from '../assets/diretores/vice-presidente.jpeg'
-import directorState from '../assets/diretores/dir-estadual.jpeg'
-import directorFinancial from '../assets/diretores/dir-financeiro.jpeg'
-import directorDiscipline from '../assets/diretores/dir-disciplina.jpeg'
-import directorCommunication from '../assets/diretores/dir-comunicacao.jpeg'
 import headerLogo from '../assets/bombril.svg'
-import footerLogo from '../assets/escudo_vetor.svg'
 
 const CONTENT_PATH = '/content/home-content.json'
 
@@ -45,35 +37,14 @@ async function preloadContent(timeoutMs = 6000): Promise<void> {
   }
 }
 
-async function waitForFonts(): Promise<void> {
-  if (!('fonts' in document)) {
-    return
-  }
-
-  try {
-    await document.fonts.ready
-  } catch {
-    // Font loading issues should not block initial render forever.
-  }
-}
-
 export async function preloadAppAssets(): Promise<void> {
   const imageSources = [
-    ...Object.values(homeImages),
-    ...homeGallery.map((item) => item.imageUrl),
-    directorPresident,
-    directorVicePresident,
-    directorState,
-    directorFinancial,
-    directorDiscipline,
-    directorCommunication,
+    homeImages.hero,
     headerLogo,
-    footerLogo,
   ]
 
   await Promise.all([
     preloadContent(),
-    waitForFonts(),
     ...imageSources.map((src) => preloadImage(src)),
   ])
 }
