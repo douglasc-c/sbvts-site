@@ -129,7 +129,7 @@ export function ContactSection({ values }: ContactSectionProps) {
   return (
     <section className="home-contact" id="membership">
       <article className="home-contact-form-card">
-        <p className="home-kicker">Se identificou</p>
+        <p className="home-kicker">Dúvidas?</p>
         <h3>Entre em contato para saber mais</h3>
 
         <form className="home-contact-form" onSubmit={handleSubmit}>
