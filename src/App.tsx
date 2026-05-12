@@ -12,8 +12,8 @@ function PageFallback() {
   return (
     <main className="page-enter">
       <section className="section-shell">
-        <p className="section-kicker">Carregando</p>
-        <h1>Preparando pagina</h1>
+        <p className="section-kicker">Preparando página</p>
+        <h1>Carregando</h1>
       </section>
     </main>
   )
