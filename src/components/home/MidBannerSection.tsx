@@ -8,7 +8,7 @@ export function MidBannerSection({ imageUrl }: MidBannerSectionProps) {
       <div className="home-mid-banner-overlay" />
       <div className="home-mid-banner-content">
         <p className="home-kicker">Sobreviventes Moto Clube</p>
-        <h2>Fazer parte dessa família não é fácil, mas pode ser mais simples do que imagina</h2>
+        <h2>Fazer parte dessa família não é fácil</h2>
         <a className="home-primary-button" href="#membership">
           Saiba mais
         </a>

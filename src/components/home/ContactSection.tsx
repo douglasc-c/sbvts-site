@@ -150,7 +150,7 @@ export function ContactSection({ values }: ContactSectionProps) {
       </article>
 
       <article className="home-values-card">
-        <p className="home-kicker">Por que nós</p>
+        <p className="home-kicker">Pilares</p>
         <h3>Ontem é história, amanhã é um conto.</h3>
 
         <ul>
