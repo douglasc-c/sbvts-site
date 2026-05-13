@@ -18,7 +18,7 @@ export function TimelineSection({ items }: TimelineSectionProps) {
     <section className="section-shell timeline-section">
       <div className="section-heading-row">
         <div>
-          <p className="section-kicker">Marcos do Clube</p>
+          <p className="section-kicker">Pontos de ignição</p>
             <h2>Conheça Nossa Base</h2>
           </div>
       </div>
