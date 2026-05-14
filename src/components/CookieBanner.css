@@ -5,7 +5,7 @@
   transform: translateX(-50%);
   z-index: 1000;
   width: calc(100% - 2rem);
-  max-width: 680px;
+  max-width: 880px;
   background: var(--surface-alt);
   border: 1px solid var(--line);
   border-radius: 12px;
