@@ -70,7 +70,7 @@ export function SiteHeader({ clubName, tagline }: SiteHeaderProps) {
             <source src={anthemTrack} type="audio/mpeg" />
             Seu navegador nao suporta audio.
           </audio>
-          <Link to="/#membership">Saber mais</Link>
+          <Link to="/#contact">Saber mais</Link>
         </div>
       </div>
 

@@ -431,7 +431,7 @@ a {
 
 .feature-grid,
 .events-list,
-.membership-grid,
+.contact-grid,
 .stats-shell {
   display: grid;
   gap: 1rem;
@@ -513,7 +513,7 @@ a {
   font-weight: 700;
 }
 
-.membership-grid {
+.contact-grid {
   margin-top: 1.4rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }

@@ -127,7 +127,7 @@ export function ContactSection({ values }: ContactSectionProps) {
   }
 
   return (
-    <section className="home-contact" id="membership">
+    <section className="home-contact" id="contact">
       <article className="home-contact-form-card">
         <p className="home-kicker">Dúvidas?</p>
         <h3>Entre em contato</h3>

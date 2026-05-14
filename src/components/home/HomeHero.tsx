@@ -16,7 +16,7 @@ export function HomeHero({ title, subtitle, imageUrl }: HomeHeroProps) {
       <div className="home-hero-content">
         <h1>{title}</h1>
         <p>{subtitle}</p>
-        <a className="home-primary-button" href="#membership">
+        <a className="home-primary-button" href="#contact">
           Saiba mais
         </a>
       </div>
