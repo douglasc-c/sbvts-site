@@ -689,13 +689,35 @@ a {
   background: #333;
 }
 
-.site-footer-copyright {
+.site-footer-bottom {
   grid-column: 1 / -1;
-  color: #555;
-  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
   border-top: 1px solid #1e1e1e;
   padding-top: 1.2rem;
   margin-top: 0.5rem;
+}
+
+.site-footer-copyright {
+  color: #555;
+  font-size: 0.7rem;
+  margin: 0;
+}
+
+.site-footer-privacy-link {
+  color: #555;
+  font-size: 0.7rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.site-footer-privacy-link:hover {
+  color: var(--muted);
 }
 
 @keyframes reveal-up {

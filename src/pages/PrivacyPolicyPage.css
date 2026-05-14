@@ -1,0 +1,72 @@
+.privacy-page {
+  background: #efefef;
+  color: #1a1a1a;
+  min-height: 100%;
+  display: grid;
+  gap: 1.4rem;
+}
+
+.privacy-page .section-shell {
+  border-top: 1px solid #d7d7d7;
+  background: #f6f6f6;
+}
+
+/* Hero */
+.privacy-hero {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.privacy-hero h1 {
+  font-size: clamp(2.4rem, 6vw, 4.3rem);
+  line-height: 0.95;
+  color: #141414;
+}
+
+.privacy-page .section-kicker {
+  color: var(--line);
+}
+
+.privacy-hero__subtitle {
+  max-width: 60ch;
+  color: #4b4b4b;
+  font-size: 0.95rem;
+}
+
+/* Content */
+.privacy-content {
+  background: #fff !important;
+}
+
+.privacy-article {
+  max-width: 72ch;
+  display: grid;
+  gap: 2rem;
+}
+
+.privacy-block h2 {
+  font-family: var(--heading-font);
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  color: #141414;
+  margin: 0 0 0.6rem 0;
+  letter-spacing: 0.02em;
+}
+
+.privacy-block p,
+.privacy-block li {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.75;
+  margin: 0 0 0.4rem 0;
+}
+
+.privacy-block ul {
+  margin: 0.4rem 0 0 1.25rem;
+  padding: 0;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.privacy-block ul li::marker {
+  color: #aaa;
+}
