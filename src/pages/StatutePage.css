@@ -1,0 +1,136 @@
+.statute-page {
+  background: #efefef;
+  color: #1a1a1a;
+  min-height: 100%;
+  display: grid;
+  gap: 1.4rem;
+}
+
+.statute-page .section-shell {
+  border-top: 1px solid #d7d7d7;
+  background: #f6f6f6;
+}
+
+/* Hero */
+.statute-hero {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.statute-hero h1 {
+  font-size: clamp(2.4rem, 6vw, 4.3rem);
+  line-height: 0.95;
+  color: #141414;
+}
+
+.statute-page .section-kicker {
+  color: var(--line);
+}
+
+.statute-hero__subtitle {
+  max-width: 60ch;
+  color: #4b4b4b;
+  font-size: 0.95rem;
+}
+
+/* Chapter Nav */
+.statute-nav {
+  background: #fff !important;
+}
+
+.statute-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.statute-nav__link {
+  font-size: 0.9rem;
+  color: #444;
+  text-decoration: none;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.statute-nav__link:hover {
+  color: var(--line);
+  border-bottom-color: var(--line);
+}
+
+/* Content */
+.statute-content {
+  background: #fff !important;
+}
+
+.statute-article {
+  max-width: 76ch;
+  display: grid;
+  gap: 3rem;
+}
+
+/* Chapter */
+.statute-chapter {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.statute-chapter__title {
+  font-family: var(--heading-font);
+  font-size: clamp(1.2rem, 2.5vw, 1.7rem);
+  color: #141414;
+  margin: 0;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid #1a1a1a;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+/* Article Block */
+.statute-block {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.statute-block__body {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.statute-block__body strong {
+  color: #141414;
+  font-family: var(--heading-font);
+}
+
+.statute-block__list {
+  margin: 0;
+  padding-left: 1.4rem;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.statute-block__list li {
+  font-size: 0.92rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+.statute-block__paragraphs {
+  display: grid;
+  gap: 0.5rem;
+  padding-left: 1rem;
+  border-left: 2px solid #e0e0e0;
+}
+
+.statute-block__paragraph {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.75;
+  margin: 0;
+  font-style: italic;
+}

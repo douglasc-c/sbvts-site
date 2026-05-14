@@ -9,6 +9,7 @@ const HomePage = lazy(async () => import('./pages/HomePage').then((module) => ({
 const AboutPage = lazy(async () => import('./pages/AboutPage').then((module) => ({ default: module.AboutPage })))
 const GalleryPage = lazy(async () => import('./pages/GalleryPage').then((module) => ({ default: module.GalleryPage })))
 const PrivacyPolicyPage = lazy(async () => import('./pages/PrivacyPolicyPage').then((module) => ({ default: module.PrivacyPolicyPage })))
+const StatutePage = lazy(async () => import('./pages/StatutePage').then((module) => ({ default: module.StatutePage })))
 
 function PageFallback() {
   return (
@@ -55,6 +56,14 @@ function App() {
             element={(
               <Suspense fallback={<PageFallback />}>
                 <PrivacyPolicyPage />
+              </Suspense>
+            )}
+          />
+          <Route
+            path="/statute"
+            element={(
+              <Suspense fallback={<PageFallback />}>
+                <StatutePage />
               </Suspense>
             )}
           />
