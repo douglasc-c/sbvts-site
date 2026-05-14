@@ -50,7 +50,29 @@ export function LatestArticlesSection({ items }: LatestArticlesSectionProps) {
   const renderCards = (cardItems: ArticleItem[], keyPrefix: 'current' | 'previous') =>
     cardItems.map((article) => (
       <article className="home-article-card" key={`${keyPrefix}-${article.title}`}>
-        <img src={article.imageUrl} alt={article.title} loading="lazy" />
+        <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+          <img
+            src={article.imageUrl}
+            alt={article.title}
+            loading="lazy"
+            draggable="false"
+            onContextMenu={e => e.preventDefault()}
+            onDragStart={e => e.preventDefault()}
+            style={{ userSelect: 'none', pointerEvents: 'auto', width: '100%', height: '100%', display: 'block' }}
+          />
+          <div
+            style={{
+              position: 'absolute',
+              inset: 0,
+              width: '100%',
+              height: '100%',
+              background: 'transparent',
+              zIndex: 2,
+              pointerEvents: 'all',
+            }}
+            aria-hidden="true"
+          />
+        </div>
         <div>
           <h3>{article.title}</h3>
           <p>{article.excerpt}</p>

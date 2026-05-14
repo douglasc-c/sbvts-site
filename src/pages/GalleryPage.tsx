@@ -119,7 +119,28 @@ export function GalleryPage() {
                 className={`gallery-lightbox-figure is-${navigationDirection}`}
                 key={`${activeIndex ?? 0}-${navigationDirection}`}
               >
-                <img src={currentItem.imageUrl} alt={currentItem.title} />
+                <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+                  <img
+                    src={currentItem.imageUrl}
+                    alt={currentItem.title}
+                    draggable="false"
+                    onContextMenu={e => e.preventDefault()}
+                    onDragStart={e => e.preventDefault()}
+                    style={{ userSelect: 'none', pointerEvents: 'auto', width: '100%', height: '100%', display: 'block' }}
+                  />
+                  <div
+                    style={{
+                      position: 'absolute',
+                      inset: 0,
+                      width: '100%',
+                      height: '100%',
+                      background: 'transparent',
+                      zIndex: 2,
+                      pointerEvents: 'all',
+                    }}
+                    aria-hidden="true"
+                  />
+                </div>
                 <figcaption>
                   <div className="gallery-lightbox-meta">
                     <strong>{currentItem.title}</strong>
@@ -164,7 +185,29 @@ export function GalleryPage() {
               onClick={() => openLightbox(index)}
               aria-label={`Abrir imagem: ${item.title}`}
             >
-              <img src={item.imageUrl} alt={item.title} loading="lazy" />
+              <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+                <img
+                  src={item.imageUrl}
+                  alt={item.title}
+                  loading="lazy"
+                  draggable="false"
+                  onContextMenu={e => e.preventDefault()}
+                  onDragStart={e => e.preventDefault()}
+                  style={{ userSelect: 'none', pointerEvents: 'auto', width: '100%', height: '100%', display: 'block' }}
+                />
+                <div
+                  style={{
+                    position: 'absolute',
+                    inset: 0,
+                    width: '100%',
+                    height: '100%',
+                    background: 'transparent',
+                    zIndex: 2,
+                    pointerEvents: 'all',
+                  }}
+                  aria-hidden="true"
+                />
+              </div>
             </button>
             <div className="gallery-card-body">
               <h2>{item.title}</h2>

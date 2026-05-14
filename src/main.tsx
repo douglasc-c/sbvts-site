@@ -14,6 +14,10 @@ if (!rootElement) {
 const root = createRoot(rootElement)
 
 async function bootstrap() {
+  // Bloqueia menu de contexto (botão direito) globalmente
+  window.addEventListener('contextmenu', (e) => {
+    e.preventDefault()
+  })
   root.render(
     <StrictMode>
       <BrowserRouter>

@@ -63,7 +63,29 @@ export function DirectorsSection() {
         {directors.map((director) => (
           <article key={director.name} className="home-director-card">
             <div className="home-director-photo-wrap">
-              <img src={director.imageUrl} alt={director.name} loading="lazy" />
+              <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+                <img
+                  src={director.imageUrl}
+                  alt={director.name}
+                  loading="lazy"
+                  draggable="false"
+                  onContextMenu={e => e.preventDefault()}
+                  onDragStart={e => e.preventDefault()}
+                  style={{ userSelect: 'none', pointerEvents: 'auto', width: '100%', height: '100%', display: 'block' }}
+                />
+                <div
+                  style={{
+                    position: 'absolute',
+                    inset: 0,
+                    width: '100%',
+                    height: '100%',
+                    background: 'transparent',
+                    zIndex: 2,
+                    pointerEvents: 'all',
+                  }}
+                  aria-hidden="true"
+                />
+              </div>
 
               {director.social && (
                 <ul className="home-director-socials" aria-label={`Redes sociais de ${director.name}`}>
