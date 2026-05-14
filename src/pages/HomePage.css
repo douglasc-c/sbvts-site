@@ -541,6 +541,11 @@
     max-width: 320px;
   }
 
+  .home-hero-logo-wrap {
+    top: 2rem;
+    transform: translateX(-50%);
+  }
+
   .home-split-block,
   .home-contact,
   .home-event-row,
