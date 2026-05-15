@@ -222,6 +222,8 @@
   .emblem-diagram__part {
     width: 92%;
     top: 16%;
+    pointer-events: none;
+    -webkit-touch-callout: none;
   }
 
   .emblem-callouts {

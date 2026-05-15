@@ -60,6 +60,7 @@ export function EmblemCulturePage() {
                 }`}
                 loading="lazy"
                 draggable={false}
+                onContextMenu={(event) => event.preventDefault()}
                 onMouseEnter={() => setActiveEmblemId(id)}
                 onMouseLeave={() => setActiveEmblemId(null)}
               />
