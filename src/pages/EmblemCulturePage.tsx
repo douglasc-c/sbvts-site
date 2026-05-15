@@ -59,6 +59,7 @@ export function EmblemCulturePage() {
                   activeEmblemId === id ? 'emblem-diagram__part--active' : ''
                 }`}
                 loading="lazy"
+                draggable={false}
                 onMouseEnter={() => setActiveEmblemId(id)}
                 onMouseLeave={() => setActiveEmblemId(null)}
               />
