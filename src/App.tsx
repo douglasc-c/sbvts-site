@@ -10,6 +10,7 @@ const AboutPage = lazy(async () => import('./pages/AboutPage').then((module) => 
 const GalleryPage = lazy(async () => import('./pages/GalleryPage').then((module) => ({ default: module.GalleryPage })))
 const PrivacyPolicyPage = lazy(async () => import('./pages/PrivacyPolicyPage').then((module) => ({ default: module.PrivacyPolicyPage })))
 const StatutePage = lazy(async () => import('./pages/StatutePage').then((module) => ({ default: module.StatutePage })))
+const EmblemCulturePage = lazy(async () => import('./pages/EmblemCulturePage').then((module) => ({ default: module.EmblemCulturePage })))
 
 function PageFallback() {
   return (
@@ -64,6 +65,14 @@ function App() {
             element={(
               <Suspense fallback={<PageFallback />}>
                 <StatutePage />
+              </Suspense>
+            )}
+          />
+          <Route
+            path="/emblem-culture"
+            element={(
+              <Suspense fallback={<PageFallback />}>
+                <EmblemCulturePage />
               </Suspense>
             )}
           />

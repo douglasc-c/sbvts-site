@@ -17,7 +17,7 @@ export function SiteFooter({ clubName }: SiteFooterProps) {
             <Link to="/#home">Inicio</Link>
             <Link to="/about">Sobre nós</Link>
             <Link to="/gallery">Galeria</Link>
-            <Link to="/statute">Estatuto</Link>
+            <Link to="/emblem-culture">Brasão e Cultura</Link>
           </nav>
         </div>
         <p>NOSSO VELHO É ESCUDO, É FORTALEZA.</p>
