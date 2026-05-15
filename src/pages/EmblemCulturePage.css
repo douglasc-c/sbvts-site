@@ -42,7 +42,7 @@
   position: relative;
   border: 1px solid #d8d8d8;
   background: #fcfcfc;
-  min-height: 980px;
+  min-height: 650px;
   overflow: hidden;
   padding: 1rem;
 }
@@ -65,7 +65,7 @@
 .emblem-diagram__image-wrap {
   position: absolute;
   left: 50%;
-  top: 35%;
+  top: 40%;
   transform: translate(-50%, -50%);
   margin: 0;
   width: min(36vw, 350px);
@@ -136,29 +136,29 @@
 
 .emblem-callout--name {
   left: 3%;
-  top: 6%;
+  top: 5%;
 }
 
 .emblem-callout--old-man {
-  right: 3%;
-  top: 6%;
+  left: 3%;
+  top: 44%;
 }
 
 .emblem-callout--cactus {
-  left: 3%;
-  top: 56%;
+  right: 3%;
+  top: 5%;
 }
 
 .emblem-callout--bottles {
   right: 3%;
-  top: 50%;
+  top: 40%;
 }
 
 .emblem-callout--skull {
-  left: 50%;
-  top: 62%;
-  transform: translateX(-50%);
-  width: min(44vw, 460px);
+  left: 29%;
+  top: 76%;
+  transform: none;
+  width: min(40vw, 780px);
 }
 
 .emblem-callout h3,
@@ -221,7 +221,7 @@
 
   .emblem-diagram__part {
     width: 92%;
-    top: 13%;
+    top: 16%;
   }
 
   .emblem-callouts {

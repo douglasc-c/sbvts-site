@@ -15,41 +15,35 @@ export const emblemTopics: EmblemTopic[] = [
     id: 'name',
     title: 'Nome sem apóstrofo',
     body: [
-      'O nome SOBREVIVENTES, sem o sinal ortográfico apóstrofo entre as letras finais, simboliza unidade.',
-      'Mesmo quando um membro estiver rodando sozinho, ele não representa um sobrevivente no singular, mas sim SobreviventeS no plural, pois o clube se entende como corpo único.',
-      "Exemplo didático: em uma grafia como Sobrevivente'S, a separação poderia transmitir ideia de individualidade. Na cultura do clube, a leitura correta é sempre de união.",
+      'A grafia SOBREVIVENTES sem apóstrofo simboliza unidade. Mesmo sozinho, o membro representa o coletivo (plural), reforçando que o clube é um corpo único e inseparável.'
     ],
   },
   {
     id: 'old-man',
-    title: 'Velho SobreviventeS',
+    title: 'O Velho',
     body: [
-      'A figura do Velho SobreviventeS é a base da cultura do clube. O velho simboliza sabedoria prática, vivida na estrada, na convivência e nas decisões coletivas.',
-      'Ele aparece sentado e segurando o MC nas mãos para representar que os destinos do clube são definidos por quem senta à mesa de reunião para votar, deliberar e zelar pelas regras: os membros de escudo fechado.',
+      'O Velho simboliza a sabedoria prática da estrada. Ele aparece sentado segurando o MC para mostrar que o destino do clube é decidido à mesa, exclusivamente pelos membros de escudo fechado que votam e zelam pelas regras.'
     ],
   },
   {
     id: 'cactus',
     title: 'Cacto',
     body: [
-      'O cacto representa resistência, sobrevivência e durabilidade.',
-      'Essas qualidades traduzem o perfil esperado dos membros do SobreviventeS Moto Clube: firmeza, adaptação e constância.',
+      'O cacto simboliza resistência e durabilidade. Representa o perfil do membro: firme, adaptável e constante diante de qualquer adversidade.'
     ],
   },
   {
     id: 'bottles',
     title: 'Garrafas e copos',
     body: [
-      'As duas garrafas e os dois copos simbolizam receptividade, hospitalidade e festividade.',
-      'A mensagem é de prontidão para receber bem, tanto os irmãos de clube quanto visitantes e frequentadores dos eventos promovidos pelo moto clube.',
+      'Simbolizam hospitalidade e festividade. Representam a prontidão do clube em receber bem irmãos, visitantes e amigos em seus eventos.'
     ],
   },
   {
     id: 'skull',
     title: 'Crânio de boi',
     body: [
-      'O crânio de boi representa um traço direto da identidade do grupo: o apreço pelo churrasco e pela convivência em volta da mesa.',
-      'No contexto do brasão, esse elemento reforça a linguagem franca e o espírito de irmandade do clube.',
+      'Ícone da identidade do grupo, representa o apreço pelo churrasco e pela convivência à mesa. Reforça a irmandade e a linguagem franca do clube.'
     ],
   },
 ]
