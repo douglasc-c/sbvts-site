@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 type MidBannerSectionProps = {
   imageUrl: string
 }
@@ -9,9 +11,9 @@ export function MidBannerSection({ imageUrl }: MidBannerSectionProps) {
       <div className="home-mid-banner-content">
         <p className="home-kicker">Sobreviventes Moto Clube</p>
         <h2>Fazer parte dessa família não é fácil</h2>
-        <a className="home-primary-button" href="#contact">
+        <Link className="home-primary-button" to="#contact">
           Saiba mais
-        </a>
+        </Link>
       </div>
     </section>
   )

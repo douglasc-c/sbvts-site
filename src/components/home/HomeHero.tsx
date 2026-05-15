@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { BrandWordmark } from '../BrandWordmark'
 
 type HomeHeroProps = {
@@ -16,9 +17,9 @@ export function HomeHero({ title, subtitle, imageUrl }: HomeHeroProps) {
       <div className="home-hero-content">
         <h1>{title}</h1>
         <p>{subtitle}</p>
-        <a className="home-primary-button" href="#contact">
+        <Link className="home-primary-button" to="#contact">
           Saiba mais
-        </a>
+        </Link>
       </div>
     </section>
   )
