@@ -86,6 +86,7 @@
   opacity: 0.7;
   transition: all 0.3s ease-in-out;
   z-index: 2;
+  cursor: pointer;
 }
 
 .emblem-diagram__part--active {
@@ -134,28 +135,28 @@
 }
 
 .emblem-callout--name {
-  left: 2.5%;
-  top: 4%;
+  left: 3%;
+  top: 6%;
 }
 
 .emblem-callout--old-man {
-  right: 2.5%;
-  top: 4%;
+  right: 3%;
+  top: 6%;
 }
 
 .emblem-callout--cactus {
-  left: 2.5%;
-  top: 34%;
+  left: 3%;
+  top: 56%;
 }
 
 .emblem-callout--bottles {
-  right: 2.5%;
-  top: 34%;
+  right: 3%;
+  top: 50%;
 }
 
 .emblem-callout--skull {
   left: 50%;
-  top: 72%;
+  top: 62%;
   transform: translateX(-50%);
   width: min(44vw, 460px);
 }
@@ -177,31 +178,6 @@
   color: #444;
 }
 
-@media (max-width: 980px) {
-  .emblem-diagram {
-    min-height: 0;
-    display: grid;
-    gap: 0.8rem;
-    padding: 0.8rem;
-  }
-
-  .emblem-diagram__arrows {
-    display: none;
-  }
-
-  .emblem-diagram__image-wrap,
-  .emblem-callout {
-    position: static;
-    transform: none;
-    width: 100%;
-  }
-
-  .emblem-diagram__image-wrap {
-    width: min(100%, 360px);
-    justify-self: center;
-  }
-}
-
 .culture-list {
   display: grid;
   gap: 0.9rem;
@@ -218,4 +194,73 @@
 .culture-block__emphasis {
   font-weight: 700;
   color: #1f1f1f !important;
+}
+
+@media (max-width: 980px) {
+  .emblem-diagram {
+    min-height: auto;
+    display: block;
+    padding: 0.8rem;
+  }
+
+  .emblem-diagram__arrows {
+    display: none;
+  }
+
+  .emblem-diagram__image-wrap {
+    position: static;
+    transform: none;
+    width: min(100%, 260px);
+    height: min(62vw, 210px);
+    margin: 0 auto 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .emblem-diagram__part {
+    width: 92%;
+    top: 13%;
+  }
+
+  .emblem-callouts {
+    margin-top: 16rem;
+  }
+
+  .emblem-callout {
+    position: static;
+    transform: none;
+    width: 100%;
+    border: 1px solid #d8d8d8;
+    background: #fafafa;
+    padding: 0.85rem;
+    margin-bottom: 0.8rem;
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  .culture-list {
+    gap: 0.8rem;
+  }
+
+  .culture-block {
+    padding: 0.95rem;
+    gap: 0.7rem;
+  }
+
+  .culture-block h3 {
+    font-size: 1.08rem;
+    line-height: 1.2;
+  }
+
+  .culture-block__emphasis {
+    padding: 0.55rem 0.7rem;
+    font-size: 0.9rem;
+  }
+
+  .culture-block p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
 }
